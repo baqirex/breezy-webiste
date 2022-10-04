@@ -11,3 +11,288 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main{
+  background-color: #d7f4fc;
+  width: 100%;
+  height: 780px;
+  margin: 0 0 0 0 ;
+}
+
+.nav-bar{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+  background-color: #d7f4fc;
+  z-index: 1;
+}
+.nav-right{
+  margin-left: 350px;
+}
+.logo-img{
+  margin-left: 100px;
+}
+.logo-img img:hover{
+  height: 27px;
+  transition: 0.3s;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+.cool-link{
+  text-decoration: none;
+  color: black;
+  padding: 16px 20px;
+}
+.cool-link:hover{
+  color: blue;
+}
+
+.btn-primary{
+  border: none !important;
+  background-color: #d12a64 !important;
+}
+.btn-primary:hover{
+  background-color: #ed3951 !important;
+}
+
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:20%;
+}
+
+.feat{
+  margin:20px;
+}
+
+.p-container{
+  margin-top: 200px;
+}
+
+.heading{
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: 620;
+}
+.h-description{
+  margin-top: 20px;
+  font-size: 21px;
+  width: 600px;
+  text-align: center;
+}
+.sft{
+  border: none !important;
+  border-radius: 24px !important;
+}
+.headerimg:hover{
+ width: 510px;
+ cursor: pointer;
+ transition: ease-in-out 0.3s;
+}
+
+.presentation{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+}
+.p-img img{
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  
+}
+.p-head{
+
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.p-title{
+  font-size: 30px;
+  font-weight: 630;
+}
+.p-heading{
+  font-size: 55px;
+}
+.p-description{
+  font-size: 21px;
+}
+
+.company{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.company h1{
+  width: 600px;
+  font-size: 45px;
+  font-weight: 640;
+  text-align: center;
+}
+.company p{
+  width: 680px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.post{
+  width: 500px;
+  margin: 30px
+}
+
+.posts{
+  display: flex;
+  margin-top: 30px;
+}
+
+.p-left{
+  margin-left: 200px;
+}
+.p-right{
+  margin-top: 100px;
+}
+.c-image{
+  margin: 40px;
+}
+.about-customers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.about-customers p{
+  width: 700px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mcard{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 320px;
+  background-color: white;
+}
+.mcard p{
+  height: 190px;
+}
+.card-c{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+.test{
+  display: flex;
+  justify-content: space-between;
+  background-color: #d7f4fc;
+  margin-top: 50px;
+}
+.test-c{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.test-c h3{
+  color: #d12a64;
+  font-size: 35px;
+}
+.test-c h1{
+  font-size: 50px;
+}
+.test-c p{
+  font-size: 20px;
+}
+.b{
+  margin: 30px;
+}
+.brands{
+  background-color: #d7f4fc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.trail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7f4fc;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.myfooter{
+  display: flex;
+  background-color: #a7eb49;
+}
+.f-logo{
+  margin-left: 80px;
+  margin-top: 100px;
+}
+.fa-twitter{
+  color: #1cb0e6;
+  padding: 10px 10px;
+}
+.fa-facebook-official{
+  color: blue;
+  padding: 10px 10px;
+}
+.fa-instagram{
+  color: #bc2a8d;
+  padding: 10px 10px;
+  
+}
+.fa-linkedin-square{
+  color: #0A66C2;
+  padding: 10px 10px;
+
+}
+.social{
+  margin-top: 100px;
+}
+.my-list{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list-heading{
+  font-size: 18px;
+  font-weight: 650;
+}
+.listing{
+  display: list-item;
+  padding: 10px;
+}
+.list-container{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 200px;
+}
+.cc{
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.cc-list{
+  margin-top: -175px;
+  margin-left: 600px;
+}
