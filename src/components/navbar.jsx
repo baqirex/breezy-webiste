@@ -1,67 +1,75 @@
 import React from "react";
 import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="nav-bar">
-        <div className="logo-img">
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid">
+        <Link to="/home" className="navbar-brand" href="#">
           <img src={logo} height="25px" />
-        </div>
-        <div className="mt-3">
-          <ul>
-            <li>
-              <a className="cool-link" href="">
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link
+                to="/product"
+                className="nav-link"
+                aria-current="page"
+                href="#"
+              >
                 Product <i className="fa fa-angle-down" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="cool-link" href="">
+            <li className="nav-item">
+              <Link to="/resources" className="nav-link" href="#">
                 Resources{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="cool-link" href="">
+            <li className="nav-item">
+              <Link to="/pricing" className="nav-link" href="#">
                 Pricing
-              </a>
+              </Link>
             </li>
-          </ul>
-        </div>
-        <div className="nav-right mt-1">
-          <ul>
-            <li>
-              <a className="cool-link" href="">
+            <li className="nav-item">
+              <Link to="/signin" className="nav-link" href="#">
                 Sign In
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="cool-link" href="">
+            <li className="nav-item">
+              <Link to="/demo" className="nav-link" href="#">
                 Demo
-              </a>
-            </li>
-            <li>
-              <div class="input-group mt-2">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your company email"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  class="btn btn-primary "
-                  type="button"
-                  id="button-addon2"
-                >
-                  Button
-                </button>
-              </div>
+              </Link>
             </li>
           </ul>
+          <form className="d-flex d-none d-lg-flex" role="sign in">
+            <input
+              className="form-control me-2 col-1"
+              type="sign in"
+              placeholder="Your company email"
+              aria-label="Sign in"
+            />
+            <div className="col-6">
+              <button className="btn btn-primary my-btn" type="submit">
+                Get Started
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

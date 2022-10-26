@@ -2,7 +2,7 @@ import React from "react";
 
 const Company = () => {
   return (
-    <div className="company">
+    <div className="container mt-4 company">
       <h1>Keep growing your company. We've got hiring covered.</h1>
       <p>
         Over 17,000 companies of every shape and size have chosen Breezy to

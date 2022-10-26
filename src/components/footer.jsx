@@ -7,60 +7,31 @@ import SupportList from "./common/supportlist";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="myfooter">
-        <div className="f-logo">
-          <img src={logo} height="40px" />
-          <p>1534 Oak St #301, Jacksonville, FL 32204</p>
-          <ul className="social">
-            <li>
-              <i className="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            </li>
-            <li>
-              <i
-                className="fa fa-facebook-official fa-2x"
-                aria-hidden="true"
-              ></i>
-            </li>
-            <li>
-              <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
-            </li>
-            <li>
-              <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            </li>
-          </ul>
-          <p>
-            © 2022 Breezy HR, Inc. <br /> More PeopleFluent Talent Solutions
-          </p>
-          <p className="cc">Part of Learning Technologies Group plc LTG</p>
-        </div>
-        <div className="list-container">
-          <ProductList />
-          <ResourcesList />
-          <CompanyList />
-          <SupportList />
-        </div>
+    <main className="f-main">
+      <div className="container">
+        <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+          <div className="col mb-3">
+            <a
+              href="/"
+              className="d-flex align-items-center mb-3 link-dark text-decoration-none"
+            >
+              <img src={logo} height="20px" />
+            </a>
+            <div className="address">
+              <p>1534 Oak St #301, Jacksonville, FL 32204</p>
+            </div>
+            <p className="text-muted">&copy; 2022 Breezy HR, inc.</p>
+          </div>
+
+          <div className="list-container">
+            <ProductList />
+            <ResourcesList />
+            <SupportList />
+            <CompanyList />
+          </div>
+        </footer>
       </div>
-      <div className="cc-list">
-        <ul>
-          <li>
-            <a className="cool-link">Security</a>
-          </li>
-          <li>
-            <a className="cool-link">Corporate Responsibility</a>
-          </li>
-          <li>
-            <a className="cool-link">Disclosures</a>
-          </li>
-          <li>
-            <a className="cool-link">Terms of Service</a>
-          </li>
-          <li>
-            <a className="cool-link">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </main>
   );
 };
 

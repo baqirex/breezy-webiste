@@ -8,29 +8,34 @@ import c5 from "../images/c5.png";
 
 const Customers = () => {
   return (
-    <div className="about-customers">
-      <h3>You're in Good Company</h3>
-      <ul>
-        <li className="c-image">
-          <img src={c1} />
-        </li>
-        <li className="c-image">
-          <img src={c2} height="30px" />
-        </li>
-        <li className="c-image">
-          <img src={c3} height="30px" />
-        </li>
-        <li className="c-image">
-          <img src={c4} height="30px" />
-        </li>
-        <li className="c-image">
-          <img src={c5} height="80px" />
-        </li>
-      </ul>
-      <p>
-        Our customers love us, and it shows! According to Gartner we're the most
-        highly rated HR and Applicant Tracking product in Customer Satisfaction.
-      </p>
+    <div className="container p-2">
+      <div className="about-customers">
+        <h3>You're in Good Company</h3>
+        <div className="c-images">
+          <ul>
+            <li className="c-image">
+              <img src={c1} />
+            </li>
+            <li className="c-image">
+              <img src={c2} height="30px" />
+            </li>
+            <li className="c-image">
+              <img src={c3} height="30px" />
+            </li>
+            <li className="c-image">
+              <img src={c4} height="30px" />
+            </li>
+            <li className="c-image">
+              <img src={c5} height="80px" />
+            </li>
+          </ul>
+        </div>
+        <p>
+          Our customers love us, and it shows! According to Gartner we're the
+          most highly rated HR and Applicant Tracking product in Customer
+          Satisfaction.
+        </p>
+      </div>
     </div>
   );
 };

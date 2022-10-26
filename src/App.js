@@ -1,26 +1,23 @@
-
-import Company from './components/company';
-import Customers from './components/customers';
+import { Route, Routes } from 'react-router-dom';
+import Demo from './components/demo';
+import Home from './components/home';
 import Main from './components/main';
-import Posts from './components/posts';
-import Presentations from './components/presentations';
-import Testimonial from './components/testimonial';
-import Brands from './components/brands';
-import Trial from './components/trial';
-import Footer from './components/footer';
+import Navbar from './components/navbar';
+import Signin from './components/signin';
+import Signup from './components/signup';
+import Test from './components/test';
+import Header from './components/header';
+import Pricing from './components/pricing';
+
+
 function App() {
   return (
-    <div className="App">
-      <Main/>
-      <Presentations/>
-      <Company/>
-      <Posts />
-      <Customers/>
-      <Testimonial/>
-      <Brands/>
-      <Trial/>
-      <Footer/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/demo' element={<Demo/>}/>
+        <Route path='/signin' element={<Signin/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+      </Routes>
   );
 }
 

@@ -9,31 +9,33 @@ import m7 from "../images/m7.png";
 
 const Brands = () => {
   return (
-    <div className="brands">
-      <ul>
-        <li className="b">
-          <img src={m1} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m2} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m3} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m4} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m5} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m6} height="150px" />
-        </li>
-        <li className="b">
-          <img src={m7} height="150px" />
-        </li>
-      </ul>
-    </div>
+    <main className="mymain">
+      <div className="container">
+        <ul>
+          <li className="b">
+            <img src={m1} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m2} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m3} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m4} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m5} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m6} height="100px" />
+          </li>
+          <li className="b">
+            <img src={m7} height="100px" />
+          </li>
+        </ul>
+      </div>
+    </main>
   );
 };
 
